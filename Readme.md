@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Vlada Nills](https://up.htmlacademy.ru/adaptive/19/user/1125187).
-* Наставник: `Неизвестно`.
+* Наставник: [Кристина Глазебная](https://htmlacademy.ru/profile/id888423).
 
 ---
 
