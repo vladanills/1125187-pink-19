@@ -33,24 +33,24 @@
 
 
     <section class="competition">
-      <p class="competition__text">
+      <p class="subtitle">
         Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
         бонусную карту! Пожалуйста, заполните форму ниже:
       </p>
       <form class="competition__form form" method="get" action="#">
-        <fieldset class="form__full-name">
+        <fieldset class="form__section form__section--full-name">
           <legend class="visually-hidden">Полное имя</legend>
           <label for="last-name" class="form__label">Фамилия:</label>
-          <input id="last-name" class="form__last-name" placeholder="Укажите фамилию *">
+          <input id="last-name" class="form__input" placeholder="Укажите фамилию *" required>
 
           <label for="first-name" class="form__label">Имя:</label>
-          <input id="first-name" class="form__first-name" placeholder="Введите ваше имя *">
+          <input id="first-name" class="form__input" placeholder="Введите ваше имя *" required>
 
           <label for="patronymic" class="form__label">Отчество:</label>
-          <input id="patronymic" class="form__patronymic" placeholder="Ну и отчество тоже">
+          <input id="patronymic" class="form__input" placeholder="Ну и отчество тоже">
         </fieldset>
 
-        <fieldset class="form__travel-checkbox">
+        <fieldset class="form__section form__section--travel-checkbox">
           <legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
           <ul class="form__list">
             <li class="form__option">
@@ -80,16 +80,16 @@
           </ul>
         </fieldset>
 
-        <fieldset class="form__contacts">
+        <fieldset class="form__section form__section--contacts">
           <legend class="visually-hidden">Контакты</legend>
           <label for="phone" class="form__label">Номер телефона:</label>
           <input id="phone" class="form__phone" type="tel" placeholder="Номер, пожалуйста">
 
           <label for="email" class="form__label">Адресс почты:</label>
-          <input id="email" class="form__email" type="email" placeholder="Введите почту *">
+          <input id="email" class="form__email" type="email" placeholder="Введите почту *" required>
         </fieldset>
 
-        <fieldset class="form__os">
+        <fieldset class="form__section form__section--os">
           <legend class="form__title">С каким приложением путешествовали?</legend>
           <input class="visually-hidden form__input form__input-radio" type="radio" id="ios" checked>
           <label for="ios" class="form__label">Pink для iOS</label>
@@ -101,7 +101,7 @@
           <label for="windows" class="form__label">Windows Phone</label>
         </fieldset>
 
-        <fieldset class="form__emotion">
+        <fieldset class="form__section form__section--emotion">
           <label for="emotion" class="form__title">Опишите свои эмоции</label>
           <textarea id="emotion" class="form__text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
