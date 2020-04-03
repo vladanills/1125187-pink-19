@@ -40,14 +40,20 @@
       <form class="competition__form form" method="get" action="#">
         <fieldset class="form__section form__section--full-name">
           <legend class="visually-hidden">Полное имя</legend>
-          <label for="last-name" class="form__label">Фамилия:</label>
-          <input id="last-name" class="form__input" placeholder="Укажите фамилию *" required>
-
-          <label for="first-name" class="form__label">Имя:</label>
-          <input id="first-name" class="form__input" placeholder="Введите ваше имя *" required>
-
-          <label for="patronymic" class="form__label">Отчество:</label>
-          <input id="patronymic" class="form__input" placeholder="Ну и отчество тоже">
+          <ul class="form__list">
+            <li class="form__option">
+              <label for="last-name" class="form__label">Фамилия:</label>
+              <input id="last-name" class="form__input" placeholder="Укажите фамилию *" required>
+            </li>
+            <li class="form__option">
+              <label for="first-name" class="form__label">Имя:</label>
+              <input id="first-name" class="form__input" placeholder="Введите ваше имя *" required>
+            </li>
+            <li class="form__option">
+              <label for="patronymic" class="form__label">Отчество:</label>
+              <input id="patronymic" class="form__input" placeholder="Ну и отчество тоже">
+            </li>
+          </ul>
         </fieldset>
 
         <fieldset class="form__section form__section--travel-checkbox">
@@ -82,23 +88,34 @@
 
         <fieldset class="form__section form__section--contacts">
           <legend class="visually-hidden">Контакты</legend>
-          <label for="phone" class="form__label">Номер телефона:</label>
-          <input id="phone" class="form__phone" type="tel" placeholder="Номер, пожалуйста">
-
-          <label for="email" class="form__label">Адресс почты:</label>
-          <input id="email" class="form__email" type="email" placeholder="Введите почту *" required>
+          <ul class="form__list">
+            <li class="form__option">
+              <label for="phone" class="form__label">Номер телефона:</label>
+              <input id="phone" class="form__phone" type="tel" placeholder="Номер, пожалуйста">
+            </li>
+            <li class="form__option">
+              <label for="email" class="form__label">Адресс почты:</label>
+              <input id="email" class="form__email" type="email" placeholder="Введите почту *" required>
+            </li>
+          </ul>
         </fieldset>
 
         <fieldset class="form__section form__section--os">
           <legend class="form__title">С каким приложением путешествовали?</legend>
-          <input class="visually-hidden form__input form__input-radio" type="radio" id="ios" checked>
-          <label for="ios" class="form__label">Pink для iOS</label>
-
-          <input class="visually-hidden form__input form__input-radio" type="radio" id="android">
-          <label for="android" class="form__label">Pink на Android</label>
-
-          <input class="visually-hidden form__input form__input-radio" type="radio" id="windows">
-          <label for="windows" class="form__label">Windows Phone</label>
+          <ul class="form__list">
+            <li class="form__option">
+              <input class="visually-hidden form__input form__input-radio" type="radio" id="ios" checked>
+              <label for="ios" class="form__label">Pink для iOS</label>
+            </li>
+            <li class="form__option">
+              <input class="visually-hidden form__input form__input-radio" type="radio" id="android">
+              <label for="android" class="form__label">Pink на Android</label>
+            </li>
+            <li class="form__option">
+              <input class="visually-hidden form__input form__input-radio" type="radio" id="windows">
+              <label for="windows" class="form__label">Windows Phone</label>
+            </li>
+          </ul>
         </fieldset>
 
         <fieldset class="form__section form__section--emotion">
