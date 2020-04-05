@@ -1,0 +1,32 @@
+.advantages__text{
+  width: 205px;
+  margin: 43px auto 27px;
+  text-align: center;
+  .font-settings(@dark-blue, 24px, @light);
+}
+
+.advantages__list{
+  margin-top: 119px;
+  margin-bottom: 320px;
+  position: relative;
+  &::after{
+    content: "";
+    position: absolute;
+    width: 157px;
+    height: 320px;
+    //background-image: url("/img/iphone-screen-mobile@1x.png");
+  }
+}
+
+.advantages__item{
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+}
+.advantages__title{
+  .font-settings(@black, 18px, @bold);
+}
+
+.advantages__description{
+  .font-settings(@dark-blue, 14px, @regular);
+}
