@@ -2,6 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
   </head>
@@ -10,7 +12,7 @@
       <a class="page-header__logo logo">
         <img class="logo__image" src="img/logo-pink-white-mobile.svg" alt="логотип Пинк">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -25,7 +27,7 @@
             <a class="site-list__link" href="form.html">Конкурс</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link">HTML Academy</a>
+            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
       </nav>
@@ -34,21 +36,27 @@
     <h1 class="visually-hidden">Приложение Пинк</h1>
 
     <section class="download">
-      <h2 class="download__title">Взгляните на жизнь иначе!</h2>
-      <img class="download__image" src="img/bg-back-mobile@1x.jpg" width="320" height="462" alt="телефон с приложением пинк">
-      <a class="download__pink button-oval button-oval--index" href="https://apps.apple.com/ru/app/apple-store/id375380948" >Скачать приложение</a>
-      <ul class="download__os-icons os-icons">
-        <li class="os-icons__item">
-          <a href="https://apps.apple.com/ru/app/apple-store/id375380948" class="os-items__link os-items__link--ios"></a>
-        </li>
-        <li class="os-icons__item">
-          <a href="https://play.google.com/store/apps?hl=ru" class="os-items__link os-items__link--android"></a>
-        </li>
-        <li class="os-icons__item">
-          <a href="https://www.microsoft.com/ru-ru/store/apps/windows-phone" class="os-items__link os-items__link--windows"></a>
-        </li>
-      </ul>
-      <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <h2 class="visually-hidden">Скачать приложение Pink</h2>
+        <p class="download__title">Взгляните на жизнь иначе!</p>
+        <a class="download__pink button-oval button-oval--index" href="https://apps.apple.com/ru/app/apple-store/id375380948" >Скачать приложение</a>
+        <ul class="download__os-icons os-icons reset-list">
+          <li class="os-icons__item">
+            <a href="https://apps.apple.com/ru/app/apple-store/id375380948" class="os-icons__link os-icons__link--ios">
+              <span class="visually-hidden">айос</span>
+            </a>
+          </li>
+          <li class="os-icons__item">
+            <a href="https://play.google.com/store/apps?hl=ru" class="os-icons__link os-icons__link--android">
+              <span class="visually-hidden">андроид</span>
+            </a>
+          </li>
+          <li class="os-icons__item">
+            <a href="https://www.microsoft.com/ru-ru/store/apps/windows-phone" class="os-icons__link os-icons__link--windows">
+              <span class="visually-hidden">виндоус</span>
+            </a>
+          </li>
+        </ul>
+        <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </section>
 
     <section class="advantages">
@@ -69,7 +77,6 @@
           <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
         </li>
       </ul>
-      <!--здесь будет вставлена картинка псевдоэлементом-->
     </section>
 
     <section class="reviews">
