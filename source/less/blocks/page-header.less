@@ -1,25 +1,27 @@
 @import "../variables";
 
 .page-header {
-  width: 320px;
-  margin: 0 auto;
-  background-color: fade(@dark-blue, 70%);
+  margin: 0;
+  padding: 0;
   color: @white;
+  position: relative;
+  z-index: 1;
+}
+
+.page-header__container {
+  background-color: fade(@black, 30%);
   display: flex;
   justify-content: space-between;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
-  position: relative;
-
-  z-index: 1;
 }
 
 @media (min-width: @tablet-width) {
-  .page-header {
-    width: 660px;
-    padding-top: 44px;
-    padding-bottom: 44px;
+  .page-header__container {
+    padding-top: 23px;
+    padding-bottom: 43px;
+    align-items: flex-end;
   }
 }

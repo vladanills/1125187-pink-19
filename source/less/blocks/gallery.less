@@ -1,0 +1,30 @@
+.gallery {
+  background-color: @white;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery__item {
+  margin-bottom: 20px;
+}
+
+.gallery__text {
+  .font-settings(@dark-blue, 14px, @regular);
+  margin: 0 auto;
+  line-height: 30px;
+  text-align: center;
+  max-width: 253px;
+  margin-top: 20px;
+  margin-bottom: 45px;
+}
+
+@media (min-width: @tablet-width) {
+  .gallery__text {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,32 @@
+@media (min-width: @tablet-width) {
+  .note {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 329px;
+    margin-top: 100px;
+    padding-bottom: 80px;
+    position: relative;
+  }
+
+  .note::after {
+    content: "";
+    position: absolute;
+  }
+
+  .note__title {
+    .font-settings(@black, 30px, @bold);
+    line-height: 36px;
+    margin: 0;
+  }
+
+  .note__text {
+    .font-settings(@dark-blue, 14px, @regular);
+    line-height: 24px;
+    max-width: 307px;
+  }
+
+  .note__link {
+    .font-settings(@pink, 14px, @regular);
+  }
+}

@@ -1,3 +1,19 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: @dark-blue;
+
+  &:hover .copyright__image {
+    fill: @dark-blue;
+  }
+
+  &:active .developer__image {
+    fill: rgba(@dark-blue, 0.3);
+  }
+}
+
+
 .copyright__text {
   .font-settings(@dark-blue, 14px, @regular);
   line-height: 18px;
@@ -5,8 +21,8 @@
 
 .copyright__icon {
   display: block;
-  background-image: url("../img/logo-htmlacademy.svg");
   width: 27px;
   height: 34px;
   background-repeat: no-repeat;
+  margin-left: 15px;
 }

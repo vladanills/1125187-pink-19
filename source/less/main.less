@@ -1,6 +1,5 @@
 body {
-  max-width: 660px;
-  min-width: 320px;
+  max-width: 320px;
   margin: 0 auto;
   padding: 0;
 
@@ -30,4 +29,10 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+@media (min-width: @tablet-width) {
+  body {
+    max-width: @tablet-width;
+  }
 }

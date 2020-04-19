@@ -1,35 +1,43 @@
 .advantages {
-  padding-top: 40px;
   padding-bottom: 290px;
   overflow: hidden;
   background-color: @white;
 }
 
-.advantages__text {
+.advantages__wrapper {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 157px;
+    height: 320px;
+    top: 720px;
+    left: 80px;
+    background-image: url("../img/iphone-screen-mobile@1x.png");
+  }
+}
+
+.advantages__text-wrapper {
   max-width: 205px;
-  margin-top: 34px;
+  margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
+}
+
+.advantages__text {
+  margin-bottom: 34px;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   .font-settings(@dark-blue, 24px, @light);
 }
 
 .advantages__list {
   display: flex;
   flex-direction: column;
-  position: relative;
-  margin-top: 113px;
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 157px;
-
-    height: 320px;
-    top: 435px;
-    left: 80px;
-    background-image: url("../img/iphone-screen-mobile@1x.png");
-  }
+  margin-top: 79px;
 }
 
 .advantages__item {
@@ -48,4 +56,58 @@
 .advantages__description {
   .font-settings(@dark-blue, 14px, @regular);
   margin: 0 auto;
+}
+
+.advantages__note {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages {
+    padding-bottom: 0;
+  }
+
+  .advantages__wrapper {
+    padding-bottom: 42px;
+
+    &::after {
+      background-image: url("../img/iphone-screen-3-tablet@1x.png");
+      width: 268px;
+      height: 481px;
+      top: 267px;
+      left: 20px;
+    }
+  }
+
+  .advantages__text-wrapper {
+    max-width: 587px;
+  }
+
+  .advantages__text-wrapper :last-child {
+    max-width: 350px;
+    margin-top: 0;
+  }
+
+  .advantages__text {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .advantages__list {
+    margin-left: 329px;
+    margin-top: 120px;
+  }
+
+  .advantages__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .advantages__item {
+    text-align: left;
+    max-width: 307px;
+  }
+
+  .advantages__note {
+    display: block;
+  }
 }

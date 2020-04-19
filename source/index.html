@@ -3,19 +3,21 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="../node_modules/normalize.less/normalize.less">
     <link rel="stylesheet" href="css/style.css" type="text/css">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo logo">
-        <img class="logo__image" src="img/logo-pink-white-mobile.svg" alt="логотип Пинк">
-      </a>
-      <nav class="main-nav main-nav--closed">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+      <nav class="main-nav main-nav--open">
+        <div class="page-header__container">
+          <a class="page-header__logo logo">
+            <img class="logo__image" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="логотип Пинк">
+          </a>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
         <ul class="main-nav__list site-list reset-list">
           <li class="site-list__item site-list__item--active">
             <a class="site-list__link">Главная</a>
@@ -61,22 +63,35 @@
 
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества приложения Пинк</h2>
-      <p class="advantages__text">Устали от серости мегаполиса?</p>
-      <p class="advantages__text">Нам есть, что вам предложить!</p>
-      <ul class="advantages__list reset-list">
-        <li class="advantages__item advantages__item--mood">
-          <h3 class="advantages__title">Поднимает настроение</h3>
-          <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-        </li>
-        <li class="advantages__item advantages__item--world">
-          <h3 class="advantages__title">Меняет мир вокруг</h3>
-          <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        </li>
-        <li class="advantages__item advantages__item--friends">
-          <h3 class="advantages__title">Заводит новых друзей</h3>
-          <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-        </li>
-      </ul>
+      <div class="advantages__wrapper">
+        <div class="advantages__text-wrapper">
+          <p class="advantages__text">Устали от серости мегаполиса?</p>
+          <p class="advantages__text">Нам есть, что вам предложить!</p>
+        </div>
+        <ul class="advantages__list reset-list">
+          <li class="advantages__item advantages__item--mood">
+            <h3 class="advantages__title">Поднимает настроение</h3>
+            <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="advantages__item advantages__item--world">
+            <h3 class="advantages__title">Меняет мир вокруг</h3>
+            <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="advantages__item advantages__item--friends">
+            <h3 class="advantages__title">Заводит новых друзей</h3>
+            <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+      </div>
+      <div class="advantages__note note">
+        <h3 class="note__title">Эффект на 24 часа</h3>
+        <p class="note__text">
+          Британские ученные провели исследования и доказали,
+          что положительный эффект от использования приложения
+          длится целые сутки!
+        </p>
+        <a href="#" class="note__link">Узнать больше об исследовании</a>
+      </div>
     </section>
 
     <section class="reviews">
@@ -166,34 +181,63 @@
         </ul>
       </div>
     </section>
-
-  </main>
-  <footer class="page-footer">
-    <div class="page-footer__wrapper">
-
-      <div class="page-footer__contacts contacts">
-        <ul class="contacts__list">
-          <li class="contacts__item">
-            <strong class="contacts__title">Остались вопросы? Свяжитесь с нами!</strong>
-            <p class="contacts__text">
+    <section class="contacts">
+      <div class="contacts__communication communication">
+        <ul class="communication__list">
+          <li class="communication__item">
+            <strong class="communication__title">Остались вопросы? Свяжитесь с нами!</strong>
+            <p class="communication__text">
               Звоните:
-              <a class="contacts__link contacts__link--phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
+              <a class="communication__link communication__link--phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
               Пишите:
-              <a class="contacts__link contacts__link--email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              <a class="communication__link communication__link--email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
               Приезжайте в гости:
-              <span class="contacts__address">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</span>
+              <span class="communication__address">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</span>
             </p>
           </li>
         </ul>
       </div>
-
       <div class="page-footer__map map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1585748655611!5m2!1sru!2sua"
                 width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
         </iframe>
       </div>
+    </section>
+  </main>
 
+  <footer class="page-footer page-footer--main">
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo logo--icon">
+        <img src="img/logo-pink-blue-mobile.svg" alt="Логотип Пинк" class="page-footer__logo-image">
+      </a>
+      <ul class="page-footer__social social reset-list">
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="#">
+            <span class="visually-hidden">Твитер</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="#">
+            <span class="visually-hidden">Ютуб</span>
+          </a>
+        </li>
+      </ul>
+      <p class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__icon" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+            <path class="copyright__image" fill="#d22856" d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"/>
+          </svg>
+          <span class="visually-hidden">HTML Academy</span>
+        </a>
+      </p>
     </div>
   </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
